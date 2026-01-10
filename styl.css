@@ -1,0 +1,14 @@
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+body{
+    background-color: rgb(23, 0, 85);
+}
+header{
+    background-color: rgb(3, 1, 99);
+    min-height: 100px;
+    padding: 10px;
+    text-align: center;
+}
