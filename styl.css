@@ -12,3 +12,18 @@ header{
     padding: 10px;
     text-align: center;
 }
+img.b-image{
+    padding: 60px;
+}
+div.banner{
+    background-color: rgb(0, 0, 54);
+    text-align: center;
+}
+button.pull{
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+button.pull + button.pull{
+    margin-left: 20px;
+}

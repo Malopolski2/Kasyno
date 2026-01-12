@@ -13,6 +13,7 @@
             padding:5px;
         }
     </style>
+    <script src="index.js"></script>
 </head>
 <body>
     <header>
@@ -24,11 +25,23 @@
         <br>
         <table>
             <tr>
-               <td><button class="trainee" id="Kitasan">Oguri Cap</button></td>
-               <td><button class="support" id="harikitteikou">Kitasan Black SSR</button></td> <!--Test-->
+               <td><button class="trainee" id="fatty" onclick="switchBanner('b-fatty')">Oguri Cap</button></td>
+               <td><button class="support" id="harikitteikou" onclick="switchBanner('b-harikitteikou')">Kitasan Black SSR</button></td> <!--Test-->
             </tr>
         </table>
         <br>
+    </div>
+    <div id="selected_banner">
+        <div class="banner" id="b-fatty" style="display: none;">
+            <img src="images/b-fatty.jpg" alt="i-fatty" class="b-image" width="400" >
+            <button class="pull" class="1-pull">1 Pull (150 Carrats)</button>
+            <button class="pull" class="10-pull">10 Pull (1500 Carrats)</button>
+        </div>
+        <div class="banner" id="b-harikitteikou" style="display: none;">
+            <img src="images/b-harikitteikou.jpg" alt="i-harikitteikou" class="b-image" width="400">
+            <button class="pull" class="1-pull">1 Pull (150 Carrats)</button>
+            <button class="pull" class="10-pull">10 Pull (1500 Carrats)</button>
+        </div>
     </div>
 </body>
 </html>
