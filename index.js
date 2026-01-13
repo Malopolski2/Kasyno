@@ -1,4 +1,5 @@
-﻿function switchBanner(banner_id) {
+﻿// Zmiana bannera
+function switchBanner(banner_id) {
     let allBanners = document.querySelectorAll(".banner");
     console.log(allBanners);
     allBanners.forEach(el => {
@@ -8,3 +9,15 @@
     console.log(currentBanner);
     currentBanner.style.display = "block";
 }
+
+
+// Ilość Carratek
+
+let carrats = 5;
+
+function carratsRefresh() {
+    let carratAmount = document.getElementById("carats_amount");
+    carratAmount.innerHTML = `${carrats} Carrats`;
+}
+
+
