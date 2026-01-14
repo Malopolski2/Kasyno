@@ -13,11 +13,16 @@ function switchBanner(banner_id) {
 
 // Ilość Carratek
 
-let carrats = 5;
+let carrats = 0;
 
-function carratsRefresh() {
+window.addEventListener('DOMContentLoaded', () => {
+    let carratAmount = document.getElementById("carats_amount");
+    carratAmount.innerHTML = `${carrats} Carrats`;
+});
+
+
+function addCarrats() {
+    carrats += 50
     let carratAmount = document.getElementById("carats_amount");
     carratAmount.innerHTML = `${carrats} Carrats`;
 }
-
-
