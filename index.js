@@ -54,9 +54,10 @@ const nature = new Trainee('Nice Nature', '1 Star', 'images\\t-nature.jpg');
 // Pulls
 
 function TraineePull(banner_uma) {
-    let value = Math.floor(Math.random() * 10);
+    let value = Math.floor(Math.random() * 10 + 1);
+    console.log(value);
     if(value == 1) {
-        let banner_value = Math.floor(Math.random() * 10);
+        let banner_value = Math.floor(Math.random() * 10 + 1);
         if(banner_value <= 5) {
             return banner_uma;
         }
@@ -121,13 +122,17 @@ function TraineeBannerPull(banner_uma){
         let resultsDiv = document.getElementById("pull_results");
         let resultsUma = TraineePull(banner_uma);
         let resultsImage = new Image(150);
+        console.log(resultsUma);
         resultsImage.src = resultsUma.source;
         resultsDiv.appendChild(resultsImage);
     }
 }
+
 function TraineeBannerTenPull(banner_uma) {
-    for(let i = 0; i<10; i++) {
-        TraineeBannerPull(banner_uma);
+    if(carrats >=1500) {
+        for(let i = 0; i<10; i++) {
+            TraineeBannerPull(banner_uma);
+        }
     }
 }
 
