@@ -40,8 +40,8 @@
     <div id="selected_banner">
         <div class="banner" id="b-fatty" style="display: none;">
             <img src="images/b-fatty.jpg" alt="i-fatty" class="b-image" width="400" >
-            <button class="pull" class="one-pull">1 Pull (150 Carrats)</button>
-            <button class="pull" class="ten-pull">10 Pull (1500 Carrats)</button>
+            <button class="pull" class="one-pull" onclick="TraineeBannerPull(fatty)">1 Pull (150 Carrats)</button>
+            <button class="pull" class="ten-pull" onclick="TraineeBannerTenPull(fatty)">10 Pull (1500 Carrats)</button>
         </div>
         <div class="banner" id="b-harikitteikou" style="display: none;">
             <img src="images/b-harikitteikou.jpg" alt="i-harikitteikou" class="b-image" width="400">
@@ -49,5 +49,8 @@
             <button class="pull" class="ten-pull">10 Pull (1500 Carrats)</button>
         </div>
     </div>
+    <br/>
+    <br/>
+    <div id="pull_results" style="background-color: rgb(44, 14, 92);"></div>
 </body>
 </html>
