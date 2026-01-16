@@ -51,5 +51,65 @@ const haru = new Trainee('Haru Urara', '1 Star', 'images\t-haru.jpg');
 const tachyon = new Trainee('Agnes Tachyon', '1 Star', 'images\t-tachyon.jpg');
 const nature = new Trainee('Nice Nature', '1 Star', 'images\t-nature.jpg');
 
-console.log(mambo, fatty);
+// Pulls
+
+function TraineePull(banner_uma) {
+    let value = Math.floor(Math.random() * 10);
+    if(value == 1) {
+        let banner_value = Math.floor(Math.random() * 10);
+        if(banner_value <= 5) {
+            return banner_uma;
+        }
+        else {
+            switch(banner_value) {
+                case 6:
+                    return agemasen;
+                    break;
+                case 7:
+                    return ballin;
+                    break;
+                case 8:
+                    return rice;
+                    break;
+                case 9:
+                    return falcon;
+                    break;
+                case 10:
+                    return digital;
+                    break;
+            }
+        }
+    }
+    else{
+        switch(value) {
+            case 2:
+                return mambo;
+                break;
+            case 3:
+                return daiwa;
+                break;
+            case 4:
+                return gold;
+                break;
+            case 5:
+                return haru;
+                break;
+            case 6:
+                return tachyon;
+                break;
+            case 7:
+                return nature;
+                break;
+            case 8:
+                return haru;
+                break;
+            case 9:
+                return tachyon;
+                break;
+            case 10:
+                return nature;
+                break;
+        }
+    }
+}
 
