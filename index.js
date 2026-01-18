@@ -18,14 +18,14 @@ let carrats = 0;
 
 window.addEventListener('DOMContentLoaded', () => {
     let carratAmount = document.getElementById("carats_amount");
-    carratAmount.innerHTML = `${carrats} Carrats`;
+    carratAmount.innerHTML = `${carrats} Carrats <img src="images/carrats.jpg" alt="" width="15">`;
 });
 
 
 function addCarrats() {
     carrats += 50
     let carratAmount = document.getElementById("carats_amount");
-    carratAmount.innerHTML = `${carrats} Carrats`;
+    carratAmount.innerHTML = `${carrats} Carrats <img src="images/carrats.jpg" alt="" width="15">`;
 }
 
 // Trainee
@@ -142,7 +142,7 @@ function TraineeBannerPull(banner_uma){
     if(carrats >= 150) {
         carrats += -150
         let carratAmount = document.getElementById("carats_amount");
-        carratAmount.innerHTML = `${carrats} Carrats`;
+        carratAmount.innerHTML = `${carrats} Carrats <img src="images/carrats.jpg" alt="" width="15">`;
         let resultsDiv = document.getElementById("pull_results");
         let resultsUma = TraineePull(banner_uma);
         let resultsImage = new Image(150);
