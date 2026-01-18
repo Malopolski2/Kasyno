@@ -32,7 +32,9 @@
         <table>
             <tr>
                <td><button class="trainee" id="fatty" onclick="switchBanner('b-fatty')">Oguri Cap</button></td>
-               <td><button class="support" id="harikitteikou" onclick="switchBanner('b-harikitteikou')">Kitasan Black SSR</button></td> <!--Test-->
+               <td><button class="trainee" id="chiyono" onclick="switchBanner('b-chiyono')">Sakura Chiyono O</button></td>
+               <td><button class="support" id="harikitteikou" onclick="switchBanner('b-harikitteikou')">Kitasan Black SSR</button></td>
+               <td><button class="support" id="tazuna" onclick="switchBanner('b-tazuna')">Tazuna SSR</button></td>
             </tr>
         </table>
         <br>
@@ -43,10 +45,20 @@
             <button class="pull" class="one-pull" onclick="TraineeBannerPull(fatty)">1 Pull (150 Carrats)</button>
             <button class="pull" class="ten-pull" onclick="TraineeBannerTenPull(fatty)">10 Pull (1500 Carrats)</button>
         </div>
+        <div class="banner" id="b-chiyono" style="display: none;">
+            <img src="images/b-chiyono.jpg" alt="i-chiyono" class="b-image" width="400" >
+            <button class="pull" class="one-pull" onclick="TraineeBannerPull(chiyono)">1 Pull (150 Carrats)</button>
+            <button class="pull" class="ten-pull" onclick="TraineeBannerTenPull(chiyono)">10 Pull (1500 Carrats)</button>
+        </div>
         <div class="banner" id="b-harikitteikou" style="display: none;">
             <img src="images/b-harikitteikou.jpg" alt="i-harikitteikou" class="b-image" width="400">
             <button class="pull" class="one-pull" onclick="SupportBannerPull(harikitteikou)">1 Pull (150 Carrats)</button>
             <button class="pull" class="ten-pull" onclick="SupportBannerTenPull(harikitteikou)">10 Pull (1500 Carrats)</button>
+        </div>
+        <div class="banner" id="b-tazuna" style="display: none;">
+            <img src="images/b-tazuna.jpg" alt="i-tazuna" class="b-image" width="400">
+            <button class="pull" class="one-pull" onclick="SupportBannerPull(tazuna)">1 Pull (150 Carrats)</button>
+            <button class="pull" class="ten-pull" onclick="SupportBannerTenPull(tazuna)">10 Pull (1500 Carrats)</button>
         </div>
     </div>
     <br/>

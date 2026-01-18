@@ -37,6 +37,7 @@ function Trainee(name, star, source) {
 }
 
 const fatty = new Trainee('Oguri Cap', '3 Star', 'images\\t-fatty.jpg');
+const chiyono = new Trainee('Sakura Chiyono O', '3 Star', 'images\\t-chiyono.jpg');
 const agemasen = new Trainee('Special Week', '3 Star', 'images\\t-agemasen.jpg');
 const ballin = new Trainee('Tokai Teio', '3 Star', 'images\\t-ballin.jpg');
 const rice = new Trainee('Rice Shower', '3 Star', 'images\\t-rice.jpg');
@@ -60,6 +61,7 @@ function Support(name, rarity, source) {
 }
 
 const harikitteikou = new Support('Kitasan Black', 'SSR', 'images\\s-harikitteikou.jpg');
+const tazuna = new Support('Tazuna', 'SSR', 'images\\s-tazuna.jpg');
 const dajmonds = new Support('Satono Diamond', 'SSR', 'images\\s-dajmonds.jpg');
 const elcondor = new Support('El Condor Pasa', 'SSR', 'images\\s-elcondor.jpg');
 const googoobabies = new Support('Super Creek', 'SSR', 'images\\s-googoobabies.jpg');
